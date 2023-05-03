@@ -1,3 +1,4 @@
+; ASM of deserialize_struct called from main.rs
 0000000000008b90 <_ZN21rust_lib_closure_test18deserialize_struct17h78300619e9e5bdc1E>:
     8b90:   41 57                   push   %r15
     8b92:   41 56                   push   %r14

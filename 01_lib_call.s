@@ -1,3 +1,4 @@
+; ASM of deserialize_struct called from inside lib.rs
 0000000000008c90 <_ZN21rust_lib_closure_test18deserialize_struct17h7cac8bcc2fad5118E>:
     8c90:   48 8b 47 08             mov    0x8(%rdi),%rax
     8c94:   48 83 f8 02             cmp    $0x2,%rax
