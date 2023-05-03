@@ -1,3 +1,4 @@
+; ASM of deserialize_struct called from main.rs/lib.rs (looks the same) with lto = "fat"
 00000000000106c0 <_ZN21rust_lib_closure_test18deserialize_struct17h4cacb9a8beb21afbE>:
    106c0:	48 8b 47 08          	mov    0x8(%rdi),%rax
    106c4:	48 83 f8 02          	cmp    $0x2,%rax
