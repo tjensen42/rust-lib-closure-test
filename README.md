@@ -1,6 +1,6 @@
 # rust-lib-closure-test
 
-Simple example to demonstrate that rustc can optimize an implementation of a generic function inside a lib way better than when its called from outside the lib.
+Simple example to demonstrate that rustc optimizes an implementation of a generic function with a closure-array as argument inside a lib way better than when its called from outside the lib.
 
 You can find the disassembled assembly of both functions in [01_lib_call.s](./01_lib_call.s) and [01_main_call.s](./01_main_call.s).
 

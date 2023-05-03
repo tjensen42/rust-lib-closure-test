@@ -20,14 +20,14 @@ where
     }
 }
 
+// Implement the generic function in the library
+pub fn deserialize_color_generic(reader: &mut &[u8], color: &mut Color) {
+    deserialize_struct(reader, color, &DESER_COLOR_CLOSURE_LIB)
+}
+
 // Closure array to deserialize a Color struct
 pub const DESER_COLOR_CLOSURE_LIB: [fn(&mut &[u8], &mut Color); 3] = [
     |r, s| s.r = r.get_u8(),
     |r, s| s.g = r.get_u8(),
     |r, s| s.b = r.get_u8(),
 ];
-
-// Implement the generic function in the library
-pub fn deserialize_color_generic(reader: &mut &[u8], color: &mut Color) {
-    deserialize_struct(reader, color, &DESER_COLOR_CLOSURE_LIB)
-}
